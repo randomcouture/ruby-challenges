@@ -1,35 +1,21 @@
-# always three script
+# Always 3 Ruby script
+
+
+# method to take users number and do math to return answer of 3.
+
+
+def always_three(number)
+(((number + 5) * 2 - 4) / 2 - number).to_s
+end
 
 # ask for a number
 
 puts "Give me a number."
 
-# get number and convert to integer
+# get number and convert to an integer and set variable
 
 first_number = gets.to_i
 
-final_number = first_number
+# call the method
 
-# add 5
-
-final_number +=5
-
-# multiply by 2
-
-final_number *=2
-
-#subtract 4
-
-final_number -=4
-
-# divide by 2
-
-final_number /=2
-
-# subtract the first number from the final number
-
-final_number -=first_number
-
-# show final number to user
-
-puts "Always #{final_number}"
+puts 'Always ' + always_three(first_number).to_s
